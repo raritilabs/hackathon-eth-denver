@@ -1,5 +1,8 @@
+
 .App {
   text-align: center;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 .App-logo {
@@ -9,7 +12,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
 }
 
@@ -27,12 +30,16 @@
 .App-link {
   color: #61dafb;
 }
-
 @keyframes App-logo-spin {
-  from {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
+}
+
+h1{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color:#61dafb;
 }

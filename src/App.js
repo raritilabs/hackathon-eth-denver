@@ -1,4 +1,7 @@
+//This is from where our app content come from
+
 import logo from './logo.svg';
+import Posts from './component/Posts'; // to display the fetched posts components , import it.
 import './App.css';
 
 function App() {
@@ -7,17 +10,11 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          "Hey!, Welcome to my-react-app".
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>React Post Sharer</h1>
       </header>
+      <Posts/> 
     </div>
   );
 }
