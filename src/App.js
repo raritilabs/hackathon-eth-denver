@@ -14,7 +14,7 @@ function App() {
         </p>
         <h1>React Post Sharer</h1>
       </header>
-      <Posts/> 
+      <Posts/>
     </div>
   );
 }
