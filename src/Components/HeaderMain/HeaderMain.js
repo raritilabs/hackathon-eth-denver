@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "./index.module.scss";
 import { APP_ENUM } from "../../enums/appEnum";
-const HeaderMain = () => {
+const HeaderMain = ({ setWalletAddress }) => {
   const handleOnClickConnectWallet = () => {
     //TODO
+    // implement the wallet connect process using wagmi
+    // once connection is successful, store the wallet address in state setWalletAddress
   };
   return (
     <div className={styles.headerMainContainer}>

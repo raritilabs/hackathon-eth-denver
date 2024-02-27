@@ -1,5 +1,8 @@
 {
-    "get-response-status": {
+    "get-mint-response-status": {
       "status": "OK"
+    },
+    "get-drip-response":{
+        "wallet_address": ""
     }
 }

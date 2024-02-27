@@ -7,29 +7,41 @@ import MintNFT from "./Components/MintNft/MintNFT";
 
 const App = () => {
   const [walletAddress, setWalletAddress] = useState("");
-  const handleOnClickDrip = () => {
+  const handleOnClickDrip = async () => {
     //TODO
+    try {
+      const walletDetails = {
+        wallet_address: walletAddress,
+      };
+      const requestOptions = {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(walletDetails),
+      };
+      const response = await fetch(
+        process.env.REACT_APP_SERVER_URI + "/get-drip-response",
+        requestOptions
+      );
+      if (response.ok) {
+        //TODO: continue the process
+      }
+    } catch (error) {
+      console.log("error", error);
+    }
   };
-  const handleOnChangeWalletAddress = (e) => {
-    setWalletAddress(e.target.value);
-  };
+
   return (
     <div>
-      <HeaderMain />
+      <HeaderMain setWalletAddress={setWalletAddress} />
       <div className={styles.getTokenContainer}>
         <div className={styles.getTokenContent}>{APP_ENUM.getTokenContent}</div>
         <div className={styles.walletAddressDetails}>
           <div className={styles.walletAddressKeyAndValue}>
             <div className={styles.ethAddress}>{APP_ENUM.ethAddress}</div>
             <div className={styles.walletAddressContainer}>
-              <input
-                type="text"
-                value={walletAddress}
-                autoFocus
-                onChange={handleOnChangeWalletAddress}
-                placeholder={APP_ENUM.getStartByWalletConnect}
-                className={styles.walletAddressInput}
-              />
+              {walletAddress ? walletAddress : APP_ENUM.getStartByWalletConnect}
             </div>
           </div>
           <div className={styles.dripButton} onClick={handleOnClickDrip}>

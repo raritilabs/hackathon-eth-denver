@@ -15,7 +15,7 @@ function MintNFT() {
     // to be updated
     try {
       const response = await fetch(
-        process.env.REACT_APP_SERVER_URI + "/get-response-status"
+        process.env.REACT_APP_SERVER_URI + "/get-mint-response-status"
       );
       const data = await response.json();
       console.log("Response:", response); // Log the response
