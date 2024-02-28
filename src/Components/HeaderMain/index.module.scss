@@ -4,6 +4,9 @@
   background: #111318;
   padding: 20px 97px 20px 126px;
 }
+.headerMainContainerMob {
+  padding: 20px;
+}
 .logoContainer {
   margin: auto 0;
   color: var(--White, #fff);
@@ -13,6 +16,10 @@
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
+}
+.logoContainerMob {
+  font-size: 22px;
+  line-height: 21px;
 }
 .walletConnectButton {
   border: none;
@@ -28,6 +35,11 @@
   line-height: 24px;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
+}
+.walletConnectButtonMob {
+  padding: 6px 12px;
+  font-size: 15px;
+  line-height: 20px;
 }
 .walletConnectButton:hover {
   box-shadow: 0 0 10px 0 #3d6eff;

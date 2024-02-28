@@ -5,4 +5,5 @@ export const APP_ENUM = {
   dripButton: "DRIP",
   ethAddress: "ETH Address",
   mintNtf: "Mint your NFT",
+  disconnectWallet: "Disconnect Wallet",
 };
