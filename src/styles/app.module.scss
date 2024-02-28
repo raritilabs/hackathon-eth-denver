@@ -1,6 +1,11 @@
 .getTokenContainer {
   padding-top: 106px;
 }
+.getTokenContainerMob {
+  padding-top: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
 .getTokenContent {
   color: var(--White, #fff);
   text-align: center;
@@ -9,6 +14,9 @@
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
+}
+.getTokenContentMob {
+  font-size: 20px;
 }
 .ethAddress {
   padding-bottom: 4px;
@@ -28,6 +36,11 @@
   margin-top: 48px;
   margin-bottom: 94px;
 }
+.walletAddressDetailsMob {
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
 .walletAddressKeyAndValue {
   display: flex;
   flex-direction: column;
@@ -44,6 +57,10 @@
   font-weight: 400;
   line-height: 29px;
   margin-right: 36px;
+}
+.walletAddressContainerMob {
+  width: auto;
+  margin-right: 0;
 }
 .dripButton {
   display: flex;

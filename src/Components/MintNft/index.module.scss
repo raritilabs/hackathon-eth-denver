@@ -2,11 +2,17 @@
   background: #111318;
   padding-top: 89px;
 }
-
+.mintSectionMainContainerMob {
+  padding-top: 50px;
+}
 .mintContainer {
   display: flex;
   justify-content: center;
   padding-bottom: 250px;
+}
+.mintContainerMob {
+  flex-direction: column;
+  padding-bottom: 80px;
 }
 .mintNftContentAndImage {
   display: flex;
@@ -21,7 +27,19 @@
   font-weight: 600;
   line-height: 24px;
 }
-
+.mintYourNftMob {
+  text-align: center;
+  padding-bottom: 25px;
+  font-size: 22px;
+  line-height: 24px;
+}
+.nftIconMob {
+  display: flex;
+  justify-content: center;
+}
+.nftImageMob {
+  width: 320px;
+}
 .stepIndicator {
   margin-left: 55px;
   margin-right: 27px;
@@ -30,7 +48,10 @@
   align-items: center;
   margin-top: 75px;
 }
-
+.stepIndicatorMob {
+  margin-left: 30px;
+  margin-right: 35px;
+}
 .step {
   display: flex;
   align-items: center;
@@ -101,4 +122,7 @@
   background: #212738;
   border: none;
   cursor: pointer;
+}
+.mintingSteps {
+  display: flex;
 }
